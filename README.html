@@ -1,0 +1,82 @@
+<h1>**Markdown2HTML**</h1>
+<h2>**Description**</h2>
+<p><b>Markdown2HTML</b> est un script Python qui convertit des fichiers au format Markdown (.md) en fichiers HTML. Il prend en charge plusieurs fonctionnalités courantes du Markdown, notamment les titres, les listes, les textes enrichis (gras, italique) et certaines transformations spécifiques, tout en respectant les exigences d'un projet Python standard.</p>
+<p>Ce projet explore la manière dont GitHub et d'autres plateformes rendent les fichiers Markdown en HTML.</p>
+<p>---</p>
+<h2>**Fonctionnalités**</h2>
+<p>1. <b>Conversion de titres</b> : Supporte les niveaux de titre de `#` à `######`.</p>
+<ul>
+<li>Markdown : `# Heading level 1`</li>
+<li>HTML : `<h1>Heading level 1</h1>`</li>
+</ul>
+<p>2. <b>Listes non ordonnées</b> :</p>
+<ul>
+<li>Markdown :</li>
+</ul>
+<p>```markdown</p>
+<ul>
+<li>Élément 1</li>
+<li>Élément 2</li>
+</ul>
+<p>```</p>
+<ul>
+<li>HTML :</li>
+</ul>
+<p>```html</p>
+<p><ul></p>
+<p><li>Élément 1</li></p>
+<p><li>Élément 2</li></p>
+<p></ul></p>
+<p>```</p>
+<p>3. <b>Listes ordonnées</b> :</p>
+<ul>
+<li>Markdown :</li>
+</ul>
+<p>```markdown</p>
+<ol>
+<li>Élément 1</li>
+<li>Élément 2</li>
+</ol>
+<p>```</p>
+<ul>
+<li>HTML :</li>
+</ul>
+<p>```html</p>
+<p><ol></p>
+<p><li>Élément 1</li></p>
+<p><li>Élément 2</li></p>
+<p></ol></p>
+<p>```</p>
+<p>4. <b>Paragraphes</b> : Chaque bloc de texte devient un paragraphe HTML.</p>
+<ul>
+<li>Markdown :</li>
+</ul>
+<p>```</p>
+<p>Ceci est un paragraphe.</p>
+<p>```</p>
+<ul>
+<li>HTML :</li>
+</ul>
+<p>```html</p>
+<p><p>Ceci est un paragraphe.</p></p>
+<p>```</p>
+<p>5. <b>Texte enrichi</b> :</p>
+<ul>
+<li>Gras (`**texte**`) : Converti en `<b>texte</b>`.</li>
+<li>Italique (`__texte__`) : Converti en `<em>texte</em>`.</li>
+</ul>
+<p>6. <b>Transformations spéciales</b> :</p>
+<ul>
+<li>Texte entre `[[...]]` : Converti en son hash MD5.</li>
+<li>Texte entre `((...))` : Suppression de toutes les lettres "c" (insensible à la casse).</li>
+</ul>
+<p>---</p>
+<h2>**Installation et exécution**</h2>
+<h3>**Prérequis**</h3>
+<ul>
+<li>Python 3.7 ou supérieur.</li>
+<li>Système d'exploitation : Ubuntu 18.04 LTS.</li>
+<li>Le script doit être rendu exécutable :</li>
+</ul>
+<p>```bash</p>
+<p>chmod +x markdown2html.py</p>
